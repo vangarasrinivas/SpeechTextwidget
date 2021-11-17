@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "speechtext",
+    "slug": "speechtext",
+    "version": "1.0.0",
+    "description": "Converting speech to text",
+    "sdkVersion": "43.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "android": {
+      "package": "Android.com"
+    }
+  }
+}

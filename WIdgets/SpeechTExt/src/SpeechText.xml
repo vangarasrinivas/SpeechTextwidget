@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="rapiddata.speechtext.SpeechText" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Speech Text</name>
+    <description>Converting speech to text</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">        
+            <property key="text" type="attribute">
+                <caption>Text</caption>
+                <description>Select your Attribute path</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <!-- <property key="textAttribute" type="attribute" onChange="onChangeAction">
+                <caption>Attribute (path)</caption>
+                <description>Select your Attribute path</description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property> -->
+
+            
+        </propertyGroup> 
+        <propertyGroup caption="Event">
+            <property key="onClick" type="action" required="false">
+            <caption>On Click</caption>
+            <description/>
+            </property>
+        </propertyGroup>   
+    </properties>
+</widget>

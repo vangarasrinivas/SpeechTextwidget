@@ -1,0 +1,51 @@
+{
+  "name": "speechtext",
+  "widgetName": "SpeechText",
+  "version": "1.0.0",
+  "description": "Converting speech to text",
+  "copyright": "Mendix 2021",
+  "author": "Srinu",
+  "engines": {
+    "node": ">=12"
+  },
+  "config": {
+    "projectPath": "D:/mendixNative/NativeWidgetSample/"
+  },
+  "packagePath": "rapiddata",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "pluggable-widgets-tools build:native",
+    "dev": "pluggable-widgets-tools start:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:native"
+  },
+  "license": "Rapid-21",
+  "bugs": {
+    "url": "https://github.com/Srinu/speechtext/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@mendix/pluggable-widgets-tools": "^9.0.0"
+  },
+  "dependencies": {
+    "@react-native-voice/voice": "^3.2.2",
+    "expo": "^43.0.2",
+    "expo-splash-screen": "~0.13.5",
+    "expo-status-bar": "~1.1.0",
+    "expo-updates": "~0.10.13",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
+    "react-native-android-voice": "^0.6.0",
+    "react-native-gesture-handler": "~1.10.2",
+    "react-native-reanimated": "~2.2.0",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "~3.8.0",
+    "react-native-stt": "^0.0.2",
+    "react-native-vector-icons": "9.0.0",
+    "react-native-voice": "^0.3.0",
+    "react-native-web": "0.17.1"
+  }
+}
