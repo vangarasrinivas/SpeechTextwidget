@@ -9,7 +9,7 @@
     "node": ">=12"
   },
   "config": {
-    "projectPath": "D:/mendixNative/NativeWidgetSample/"
+    "projectPath": "D:/Users/vigne/Mendix/App-main"
   },
   "packagePath": "rapiddata",
   "scripts": {

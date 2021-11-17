@@ -7,8 +7,17 @@
     <description>Converting speech to text</description>
     <icon/>
     <properties>
+    <propertyGroup caption="Vignesh Text">        
+            <property key="SpeechT" type="attribute">
+                <caption>Speech Text</caption>
+                <description>Select your Attribute path</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+    </propertyGroup> 
         <propertyGroup caption="General">        
-            <property key="text" type="attribute">
+            <property key="text1" type="attribute">
                 <caption>Text</caption>
                 <description>Select your Attribute path</description>
                 <attributeTypes>

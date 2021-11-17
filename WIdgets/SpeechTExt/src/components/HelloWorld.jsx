@@ -17,21 +17,31 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome'
 
 export class HelloWorld extends Component {
 
-    
-
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
+        props.SpeechT=""
         this.state={
-            results:[]
+            results:"",
+            text1:props.text1,
+            SpeechT:props.SpeechT.value
         }
-        Voice.onSpeechResults=this.onSpeechResults.bind(this);
+        Voice.onSpeechResults=this.onSpeechResults;
         // Voice.onChange=this.onChange.bind(this)
     }
 
-    onSpeechResults(e){
+    onSpeechResults= (e) => {
+       // alert(e.value[0]);
+        var text=e.value[0];
+        this.props.SpeechT.setValue(text);
         this.setState({
-            results:e.value
-        })
+            SpeechT:text
+        });
+        this.props.onClick.execute();
+        //this.props.text1.setValue(e.value[0]);
+        /*this.setState({
+            results:e.value[0],
+            text1:e.value[0]
+        })*/
         // props.text.value(e);
     }
 
@@ -54,13 +64,8 @@ export class HelloWorld extends Component {
     render() {
         return (
             <View>
-                <Text onLongPress={this.onSpeechStart.bind()}><FontAwesome name='microphone' size={60} onChange={this.onChange.bind()} /></Text>
+                <Text onLongPress={this.onSpeechStart.bind()}><FontAwesome name='microphone' size={60} color='white'/></Text>
                 {/* <Text onPress={this.onSpeechEnd.bind()}><FontAwesome name='microphone' size={60} /></Text> */}
-                {this.state.results.map((text, index)=>{
-                    return(
-                        <Text key={index}>{text}</Text>
-                    )
-                })}
             </View>
         );
     }
